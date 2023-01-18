@@ -1,7 +1,3 @@
-<script>
-  import pico from "@picocss/pico";
-</script>
-
 <nav class="layout">
   Access Physical Therapy
   <a prefetch href="/">Home</a>
