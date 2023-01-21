@@ -4,10 +4,10 @@
 </script>
 
 <div class="layout">
-  <!-- {JSON.stringify(slice.items)} -->
   {#each slice.items as blurb}
-    <!-- {JSON.stringify(blurb)} -->
-    {@html prismicH.asHTML(blurb.blurb_rich_text)}
+    <article>
+      {@html prismicH.asHTML(blurb.blurb_rich_text)}
+    </article>
   {/each}
 </div>
 

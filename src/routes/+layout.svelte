@@ -12,10 +12,23 @@
 </footer>
 
 <style>
+  :root {
+    --muted-green: #61892f;
+    --bright-green: #86c232;
+    --main-bg-color: #222629;
+    --dark-gray: #474b4f;
+    --light-gray: #6b6e70;
+  }
+
   nav {
     background: rgba(0, 0, 0, 0.4);
+    color: var(--muted-green);
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  nav > a {
+    color: var(--bright-green);
   }
 
   nav,
@@ -27,8 +40,16 @@
   }
 
   :global(html) {
-    background: rgb(20, 20, 40);
+    background: var(--main-bg-color);
     overflow-y: scroll;
+  }
+
+  :global(article) {
+    background-color: var(--dark-gray);
+  }
+
+  :global(article > h2) {
+    color: var(--bright-green);
   }
 
   :global(.layout) {
@@ -45,6 +66,6 @@
   footer {
     text-align: center;
     margin: 3rem 0;
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--muted-green);
   }
 </style>
