@@ -3,11 +3,8 @@
   export let slice;
 </script>
 
-<div class="layout">
-  <img
-    src={slice.primary.main_image_file.url}
-    alt={slice.primary.main_image_file.alt}
-  />
+<div class="layout freefloat" style="margin-top: 10px">
+  {@html prismicH.asHTML(slice.primary.single_paragraph_text)}
 </div>
 
 <!-- <pre>{JSON.stringify(slice, null, 2)}</pre> -->

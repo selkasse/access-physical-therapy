@@ -1,6 +1,10 @@
 <nav class="layout">
   Access Physical Therapy
   <a prefetch href="/">Home</a>
+  <a prefetch href="/about">About</a>
+  <a prefetch href="/location">Location</a>
+  <a prefetch href="/">Testimonials</a>
+  <a prefetch href="/">Forms</a>
 </nav>
 
 <main>
@@ -56,6 +60,10 @@
     --width: 700px;
     padding-left: max(1rem, calc(calc(100vw - var(--width)) / 2));
     padding-right: max(1rem, calc(calc(100vw - var(--width)) / 2));
+  }
+
+  :global(.freefloat) {
+    color: blue;
   }
 
   main {
